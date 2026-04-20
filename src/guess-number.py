@@ -8,7 +8,7 @@ print("-" * 60)
 
 # ======== Validasi Variabel ======== 
 num = random.randrange(1,50) # Mencari angka random dengan library random
-correct = 0 # Vaiabel jumlah tebakan yang benar
+totalCorrect = 0 # Vaiabel jumlah tebakan yang benar
 
 # ======== Loop Tempat Game Berjalan ======== 
 for i in range(7): # Looping untuk mengatur kesempatan Player untuk menjawab
@@ -24,12 +24,12 @@ for i in range(7): # Looping untuk mengatur kesempatan Player untuk menjawab
     elif correct < num: # Jika tebakan lebih kecil dari jawaban
         print("Kekecilan! Coba angka yang lebih besar.")
     else: # Jika Tebakan Benar
-        correct += 1 # Mengubah Nilai variabel correct
+        totalCorrect += 1 # Mengubah Nilai variabel correct
         break
 
 # ======== Output Setelah Game Selesai ========
 # Percabangan output keberhasilan Player 
-if correct == 1: # Jika Player berhasil menebak
+if totalCorrect == 1: # Jika Player berhasil menebak
     print("\nHoree! Kamu Berhasil Menebaknya.")
 else: # Jika Player gagal menebak
     print("\nSayang sekali, kamu gagal Menebaknya.")
