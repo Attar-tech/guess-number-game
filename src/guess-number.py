@@ -33,3 +33,5 @@ if correct == 1: # Jika Player berhasil menebak
     print("\nHoree! Kamu Berhasil Menebaknya.")
 else: # Jika Player gagal menebak
     print("\nSayang sekali, kamu gagal Menebaknya.")
+
+print("Jawabannya adalah", num) # Output jawaban yang benar
